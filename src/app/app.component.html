@@ -17,20 +17,20 @@
       </li>
     </ul>
     <div> Hello {{name}}</div>
-    <li data-v-26e3714a="" class="nav-item dropdown">
-      <a data-v-26e3714a="" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle my-2 my-lg-0"> Login </a>
-      <form data-v-26e3714a="" ng-controller="inputController" class=" dropdown-menu p-4 dropdown-menu-right ">
-      <div data-v-26e3714a="" class="form-inline">
-        <label data-v-26e3714a="" for="email">Email address</label>
-        <input data-v-26e3714a="" type="email" #box (keyup)="onKey(box.value)" placeholder="email@example.com" required="required" class="form-control">
+    <li class="nav-item dropdown">
+      <a href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle my-2 my-lg-0"> Login </a>
+      <form ng-controller="inputController" class=" dropdown-menu p-4 dropdown-menu-right ">
+      <div class="form-inline">
+        <label for="email">Email address</label>
+        <input type="email" #box (keyup)="onKey(box.value)" placeholder="email@example.com" required="required" class="form-control">
       </div>
-      <div data-v-26e3714a="" class="form-inline"><label data-v-26e3714a="" for="password">Password</label>
-        <input data-v-26e3714a="" type="password" [(ngModel)]="password" placeholder="Password" required="required" class="form-control">
+      <div class="form-inline"><label for="password">Password</label>
+        <input type="password" [(ngModel)]="password" placeholder="Password" required="required" class="form-control">
       </div>
-      <div data-v-26e3714a="" class="form-check"><input data-v-26e3714a="" type="checkbox" id="checklogin" class="form-check-input">
-        <label data-v-26e3714a="" for="checklogin" class="form-check-label"> Se souvenir de moi </label>
+      <div class="form-check"><input type="checkbox" id="checklogin" class="form-check-input">
+        <label for="checklogin" class="form-check-label"> Se souvenir de moi </label>
       </div>
-      <button data-v-26e3714a="" type="submit" class="btn btn-primary">Sign in</button></form></li><li data-v-26e3714a="" class="nav-item"><a data-v-26e3714a="" href="#" class="nav-link disabled">Logout</a>
+      <button type="submit" class="btn btn-primary">Sign in</button></form></li><li class="nav-item"><a href="#" class="nav-link disabled">Logout</a>
     </li>
   </div>
 </nav>
