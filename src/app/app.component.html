@@ -1,0 +1,39 @@
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Framework AngularJs</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/">Accueil<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/carrousel">Carrousel</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/formulaire">Formulaire</a>
+      </li>
+    </ul>
+    <div> Hello {{name}}</div>
+    <li data-v-26e3714a="" class="nav-item dropdown">
+      <a data-v-26e3714a="" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle my-2 my-lg-0"> Login </a>
+      <form data-v-26e3714a="" ng-controller="inputController" class=" dropdown-menu p-4 dropdown-menu-right ">
+      <div data-v-26e3714a="" class="form-inline">
+        <label data-v-26e3714a="" for="email">Email address</label>
+        <input data-v-26e3714a="" type="email" #box (keyup)="onKey(box.value)" placeholder="email@example.com" required="required" class="form-control">
+      </div>
+      <div data-v-26e3714a="" class="form-inline"><label data-v-26e3714a="" for="password">Password</label>
+        <input data-v-26e3714a="" type="password" [(ngModel)]="password" placeholder="Password" required="required" class="form-control">
+      </div>
+      <div data-v-26e3714a="" class="form-check"><input data-v-26e3714a="" type="checkbox" id="checklogin" class="form-check-input">
+        <label data-v-26e3714a="" for="checklogin" class="form-check-label"> Se souvenir de moi </label>
+      </div>
+      <button data-v-26e3714a="" type="submit" class="btn btn-primary">Sign in</button></form></li><li data-v-26e3714a="" class="nav-item"><a data-v-26e3714a="" href="#" class="nav-link disabled">Logout</a>
+    </li>
+  </div>
+</nav>
+<div class="page-content">
+  <router-outlet></router-outlet> 
+</div>
